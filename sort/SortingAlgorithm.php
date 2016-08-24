@@ -4,13 +4,13 @@ namespace Training\sort;
 /**
  * 
  * @author zhuangzhiwei
- * @todo ¼¸ÖÖÀàĞÍµÄÅÅĞò
+ * @todo å‡ ç§ç±»å‹çš„æ’åº
  *
  */
 class SortingAlgorithm{
 	/**
 	 * @author zhuangzhiwei
-	 * @todo Ã°ÅİÅÅĞò
+	 * @todo å†’æ³¡æ’åº
 	 * @param array $data
 	 * @return array
 	 */
@@ -18,7 +18,7 @@ class SortingAlgorithm{
 		if (!empty($data)){
 			$count = count($data);
 			for ($i = $count-1; $i > 0; $i--){
-				$mark = 0; //ÓĞÎŞ½»»»±êÖ¾
+				$mark = 0; //æœ‰æ— äº¤æ¢æ ‡å¿—
 				for ($j = 0; $j < $i; $j++){
 					if($data[$j] > $data[$j+1]){
 						$item = $data[$j];
@@ -27,7 +27,7 @@ class SortingAlgorithm{
 						$mark = 1;
 					}
 				}
-				//ÎŞ½»»»ÔòÍË³öÑ­»·
+				//æ— äº¤æ¢åˆ™é€€å‡ºå¾ªç¯
 				if(!$mark){
 					break;
 				}
@@ -38,7 +38,7 @@ class SortingAlgorithm{
 	
 	/**
 	 * @author zhuangzhiwei
-	 * @todo ²åÈëÅÅĞò
+	 * @todo æ’å…¥æ’åº
 	 * @param array $data
 	 * @return array
 	 */
@@ -52,7 +52,7 @@ class SortingAlgorithm{
 						$data[$j+1] = $data[$j];
 						$data[$j] = $item;
 					}else {
-						//ÎŞ½»»»ÔòÍË³ö£¬Ç°ÃæµÄÊı×éÒÑ¾­ÊÇÓĞĞòÊı×é
+						//æ— äº¤æ¢åˆ™é€€å‡ºï¼Œå‰é¢çš„æ•°ç»„å·²ç»æ˜¯æœ‰åºæ•°ç»„
 						break;
 					}
 				}
@@ -63,7 +63,7 @@ class SortingAlgorithm{
 	
 	/**
 	 * @author zhuangzhiwei
-	 * @todo ¿ìÅÅ
+	 * @todo å¿«æ’
 	 * @param array $data
 	 * @return array
 	 */
