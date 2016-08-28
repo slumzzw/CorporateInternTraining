@@ -136,10 +136,9 @@ class SortingAlgorithm
         if (!empty($data)) {
             if ($start < $end) {
                 //递归分组
-                $mid = ($start + $end) / 2;
+                $mid = floor(($start + $end) / 2);
                 $this->mergeSort($data, $start, $mid);
                 $this->mergeSort($data, $mid + 1, $end);
-
                 //合并数组
                 $temp = [];
                 $low  = $start;
@@ -167,7 +166,7 @@ class SortingAlgorithm
                 $length = count($temp);
                 for ($i = 0; $i < $length; $i++) {
                     $data[$start + $i] = $temp[$i];
-                }
+                } 
             }
         }
     }
